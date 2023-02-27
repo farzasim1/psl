@@ -1,0 +1,52 @@
+<style>
+   html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  #player-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #myElement {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
+</style>
+
+<div id="myElement"></div>
+
+<script type="text/javascript" src="https://cdn.jwplayer.com/libraries/5iL2r8dY.js"></script>
+<script type="text/javascript">
+  jwplayer.key = 'ypdL3Acgwp4Uh2/LDE9dYh3W/EPwDMuA2yid4ytssfI=';
+</script>
+<script type="text/javascript">
+  jwplayer("myElement").setup({
+    file: 'https://stream.mux.com/VW00hSHkGpC8CPYlkQgkrjiuVmKSUsPzsUQ2U4EXafpg.m3u8',
+    height: '100%',
+    width: '100%',
+    autostart: false,
+    aboutlink: 'https://play.niazitv.pk/',
+    aspectratio: '16:9',
+    stretching: 'exactfit',
+    primary: 'html5',
+    playbackRateControls: [0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2],
+    // logo: {
+    //   file: '/assets/niaziplay.jpg',
+    //   hide: false,
+    //   link: 'https://play.niazitv.pk/',
+    //   margin: '10',
+    //   position: 'top-left'
+    // },
+  });
+</script>
